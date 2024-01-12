@@ -21,8 +21,8 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   // Variables to store return values
-  const licenseBadge = renderLicenseBadge();
-  const licenseLink = renderLicenseLink();
+  const licenseBadge = renderLicenseBadge(license);
+  const licenseLink = renderLicenseLink(license);
   
   if (license) {
     return `
@@ -41,28 +41,29 @@ function generateMarkdown(data) {
   return `
   # ${data.title}
   ## Table of Content
-  -[Description](##description)
-  -[Installation](##installation)
-  -[Usage](##usage)
-  -[How to Contribute](##how-to-contribute)
-  -[Tests](##tests)
+  - [Description](##description)
+  - [Installation](##installation)
+  - [Usage](##usage)
+  - [How to Contribute](##how-to-contribute)
+  - [Tests](##tests)
 
-  ##Description
+  ## Description
   ${data.description}
 
-  ##Installation
+  ## Installation
   ${data.installInstruct}
 
-  ##Usage
+  ## Usage
   ${data.usageInfo}
 
-  ##How to Contribute
+  ## How to Contribute
   ${data.contributionGuide}
 
-  ##Tests
+  ## Tests
   ${data.tests}
 
   ${renderLicenseSection(data.license)}
+  TEST
 `;
 }
 

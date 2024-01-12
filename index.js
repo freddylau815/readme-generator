@@ -29,31 +29,35 @@ const questions = [
     {
         type: 'input',
         name: 'contributionGuide',
-        message: 'Provide a short description of your project'
+        message: 'How would you like other developers to contribute?'
     },
     {
         type: 'input',
-        name: 'testInstruct',
-        message: 'Provide a short description of your project'
+        name: 'tests',
+        message: 'What tests did you provide for your application?'
     },
+    {
+        type: 'list',
+        name: 'license',
+        choices: ['mit', 'bsl-1.0', 'agpl-3.0']
+
+    }
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile('./README.md', markdownFile, (err) => {
-        
-    }
-
-    
-    
-    )
+    // Function to grab the arguments passed (file, content, err?) 
+    fs.writeFile(fileName, data, err)
+    if (err) return console.log(err)
 }
 
 // TODO: Create a function to initialize app
 function init() {
-    //Prompt questiopns then take answer objects
-    inquirer.prompt(questions).then(answerObj => {
+    // Prompt questiopns then take answer objects
+    inquirer.prompt(questions).then((answerObj) => {
+        // answerObject is being plugged into function below that plugs data into md
         const readme = generateMarkdown(answerObj)
+        // Function below creates the md and grabs above function content? 
         writeToFile('./README.md', readme)
     })
 }

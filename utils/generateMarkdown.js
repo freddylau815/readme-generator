@@ -26,9 +26,11 @@ function renderLicenseSection(license) {
   
   if (license) {
     return `
-    ## License
-    ${licenseBadge}
-    ${licenseLink}
+  ## License
+  ${licenseBadge}
+
+  ${licenseLink}
+  
     `
   } else {
     return ''
@@ -37,6 +39,8 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
+const licenseSectionOutput = renderLicenseSection(data.license)
+
   // The content of our file goes below
   return `
   # ${data.title}
@@ -62,7 +66,7 @@ function generateMarkdown(data) {
   ## Tests
   ${data.tests}
 
-  ${renderLicenseSection(data.license)}
+  ${licenseSectionOutput}
   TEST
 `;
 }

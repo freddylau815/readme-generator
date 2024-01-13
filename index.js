@@ -41,6 +41,12 @@ const questions = [
         name: 'license',
         choices: ['mit', 'bsl-1.0', 'agpl-3.0']
 
+    },
+    {
+        type: 'input',
+        name: 'Questions',
+        message: 'What is your GitHub username?'
+
     }
 ];
 

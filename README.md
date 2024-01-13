@@ -12,9 +12,9 @@ Link to deployed code: https://freddylau815.github.io/readme-generator/
  - npm to load packages
  - Inquirer packages from npm was used to have prompts in command-line
 
- ## Usage
+## Usage
 Run node index.js in command-line terminal to prompt user for answers
 Link to demo video: https://drive.google.com/drive/folders/152do3Z0gudPxEhaiA1yjMovvZMFLoi-7?usp=sharing
 
- ## License
- ![MIT](https://img.shields.io/badge/license-MIT-brightgreen.svg)
+## License
+![MIT](https://img.shields.io/badge/license-MIT-brightgreen.svg)

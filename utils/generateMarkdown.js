@@ -30,7 +30,7 @@ function renderLicenseSection(license) {
   ${licenseBadge}
 
   ${licenseLink}
-  
+
     `
   } else {
     return ''
@@ -50,6 +50,7 @@ const licenseSectionOutput = renderLicenseSection(data.license)
   - [Usage](##usage)
   - [How to Contribute](##how-to-contribute)
   - [Tests](##tests)
+  - [Questions](##questions)
 
   ## Description
   ${data.description}
@@ -67,7 +68,12 @@ const licenseSectionOutput = renderLicenseSection(data.license)
   ${data.tests}
 
   ${licenseSectionOutput}
-  TEST
+
+  ## Questions
+  ${data.userGit}
+  
+  ${data.userEmail}
+  
 `;
 }
 

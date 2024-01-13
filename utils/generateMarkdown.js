@@ -45,12 +45,12 @@ const licenseSectionOutput = renderLicenseSection(data.license)
   return `
   # ${data.title}
   ## Table of Content
-  - [Description](##description)
-  - [Installation](##installation)
-  - [Usage](##usage)
-  - [How to Contribute](##how-to-contribute)
-  - [Tests](##tests)
-  - [Questions](##questions)
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [How to Contribute](#how-to-contribute)
+  - [Tests](#tests)
+  - [Questions](#questions)
 
   ## Description
   ${data.description}
@@ -71,7 +71,7 @@ const licenseSectionOutput = renderLicenseSection(data.license)
 
   ## Questions
   ${data.userGit}
-  
+
   ${data.userEmail}
   
 `;

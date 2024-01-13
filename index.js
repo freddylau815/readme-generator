@@ -48,7 +48,7 @@ const questions = [
     {
         type: 'input',
         name: 'usageInfo',
-        message: 'Provide instructions for use of your applicion',
+        message: 'Provide instructions for use of your application',
 
         validate: function (usageInfo) {
             if (usageInfo === ''){

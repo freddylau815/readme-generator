@@ -4,7 +4,8 @@
 In this project, I made a command-line application to generate a README.md file for GitHub projects. The application prompts users to provide a description, how to use the app, how to install it, how to report issues, and how to make contributions. It also generates a license section based on the license the user chooses. This app allows users to quickly generate README's for future projects.
 
 ## Repository
-Link to deployed code: https://freddylau815.github.io/readme-generator/
+Link to deployed code: https://github.com/freddylau815/readme-generator/blob/main/generatedREADME.md
+
 
 ## Technologies
  - Node.js to run command-line application
